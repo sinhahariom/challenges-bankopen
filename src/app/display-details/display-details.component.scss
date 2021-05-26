@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 .details-parent-wrapper{
     height: 100%;
     width: 100%;
@@ -12,10 +12,86 @@
     font-family: 'Source Sans Pro', sans-serif;
     .left-section{
         width: 60%;
+        .details{
+            height: 100%;
+            width: 700px;
+            padding: 7%;
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            margin-top : -10rem;
+            .details-left{
+                height: 100%;
+                .details-a{
+                    height: 150px;
+                    width: 250px;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10%;
+                    box-shadow: 0px 0px 30px #2321321F;
+                    background-color: white;
+                    margin-bottom: 3rem;
+                    img{
+                        height: 50px;
+                        width: 50px;
+                        margin-bottom: 2%;
+                    }
+                    .detail-title{
+                        font-weight: bold;
+                        margin-bottom: 2%;
+                    }
+                    .detail-content{
+                        font-family: 'Poiret One', cursive;
+                        font-size: 4px;
+                    }
+                    &:hover{
+                        color: white;
+                        opacity: 0.7;
+                        background-color: #c7abdd;
+                    }
+                }
+            }
+            .details-right{
+                height: 100%;
+                margin-left: 10%;
+                padding-top: 15%;
+                .details-b{
+                    cursor: pointer;
+                    height: 150px;
+                    width: 250px;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10%;
+                    box-shadow: 0px 0px 30px #2321321F;
+                    background-color: white;
+                    margin-bottom: 3rem;
+                    img{
+                        height: 50px;
+                        width: 50px;
+                        margin-bottom: 2%;
+                    }
+                    .detail-title{
+                        font-weight: bold;
+                        margin-bottom: 2%;
+                    }
+                    .detail-content{
+                        font-family: 'Poiret One', cursive;
+                        font-size: 4px;
+                    }
+                    &:hover{
+                        color: white;
+                        opacity: 0.7;
+                        background-color: #c7abdd;
+                    }
+                }
+            }
+        }
     }
     .right-section{
         width: 40%;
-        padding: 20% 5% 5% 5%;
+        padding: 10% 5% 5% 5%;
         height: 400px;
         .footer-wrapper{
             height: 300px;
