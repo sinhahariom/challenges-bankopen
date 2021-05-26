@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+.parent-wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    .left-child-wrapper{
+        width: 50%;
+        position: relative;
+        .bg-small-circle-wrapper{
+            height: 50%;
+            width: 50%;
+            background-image: url('../../assets/svgs/blob-small.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: -10%;
+            margin-top: 15%;
+        }
+        .collect-img{
+            margin-top: -40%;
+            margin-left:20%;
+            height: 260px;
+            width: 500px;
+        }
+        .intro-text-wrapper{
+            position: absolute;
+            height: 100px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            top: 15%;
+            left: 20%;
+            .intro{
+                width: 300px;
+                text-align: left;
+                font-size:32px;
+                font-weight: bold;
+                line-height: 40px;
+            }
+            .base-tile{
+                height: 4px;
+                width: 136px;
+                border-radius: 13px;
+                background-color: black;
+                margin-top: 2%  ;
+            }
+        }
+        .acc-dots{
+            margin-left: 50%;
+            margin-top: -5%;
+        }
+    }
+    .right-child-wrapper{
+        width: 50%;
+        overflow: hidden;
+        .bg-circle-wrapper{
+            height: 100%;
+            width: 100%;
+            background-image: url('../../assets/svgs/circle.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: -20%;
+            margin-left: 30%;
+        }
+    }
+}

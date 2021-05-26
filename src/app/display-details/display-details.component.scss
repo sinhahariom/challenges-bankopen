@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+.details-parent-wrapper{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/svgs/sol_wave_bg.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Source Sans Pro', sans-serif;
+    .left-section{
+        width: 60%;
+    }
+    .right-section{
+        width: 40%;
+        padding: 20% 5% 5% 5%;
+        height: 400px;
+        .footer-wrapper{
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            .intro{
+                width: 300px;
+                text-align: left;
+                font-size:32px;
+                font-weight: bold;
+                line-height: 40px;
+            }
+            .base-tile{
+                height: 4px;
+                width: 136px;
+                border-radius: 13px;
+                background-color: black;
+                margin-top: 10%;
+            }
+            .sub-line{
+                font: 1rem;
+                width: 250px;
+                word-wrap: break-word;
+                margin-top: 10%;
+            }
+        }
+        .designer-btn{
+            width: 200px;
+            height: 50px;
+            border-radius: 20px;
+            background: none;
+            outline: none;
+            border: 1px solid #663399;
+            color: #663399;
+            cursor: pointer;
+            &:hover{
+                background-color: #663399;
+                color: white;
+            }
+        }
+    }
+}
