@@ -24,7 +24,38 @@
         <div class="right-child-wrapper">
             <div class="bg-circle-wrapper"></div>
             <div class="calculator-wrapper">
-                <!-- <div class="calculator">ASD</div>
+                <div class="calculator">
+                    <div class="monthly-income">
+                        <span class="label">Monthly Income</span>
+                        <span class="value">&#8377; {{income}}</span>
+                        <mat-slider class="slider" (change)="detectChangesForIncome($event)" [value]="income" min="100000" max="300000" step="1" ></mat-slider>
+                    </div>
+                    <div class="monthly-expense">
+                        <span class="label">Monthly Expense</span>
+                        <span class="value">&#8377; {{expense}}</span>
+                        <mat-slider min="100000" max="300000" step="1" (change)="detectChangesForExpense($event)" [value]="expense"></mat-slider>
+                    </div>
+                    <div class="tenure">
+                        <span class="label">Repayment Tenure</span>
+                        <mat-form-field>
+                            <mat-select value="6">
+                              <mat-option value="6">6 Months</mat-option>
+                              <mat-option value="9">9 Months</mat-option>
+                              <mat-option value="12">12 Months</mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+                    <div class="switch">
+                        <span class="label">Do you have any existing loans ? </span>
+                        <mat-slide-toggle color="primary"></mat-slide-toggle>
+                    </div>
+                    <div class="amount">
+                        <span class="label">EMI of existing loan [optional]</span>
+                        <mat-form-field>
+                            <input matInput value="&#8377; 50,000">
+                        </mat-form-field>
+                    </div>
+                </div>
                 <div class="results">
                     <div class="body">
                         <span class="label">Loan Amount</span>
@@ -33,9 +64,9 @@
                         <span class="value">&#8377; 15,000</span>
                         <button>Get Money</button>
                     </div>
-                </div> -->
-                <img src="../../assets/svgs/Group 6.svg"/>
+                </div>
             </div>
+            <img class="acc-dots" src="../../assets/svgs/accounting_dots.svg"/>
         </div>
     </div>
 </div>

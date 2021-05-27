@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-calculator.component.scss']
 })
 export class DisplayCalculatorComponent implements OnInit {
-
+  income : any = 0;
+  expense : any = 0;
   constructor() { }
 
   ngOnInit(): void {
@@ -20,5 +21,12 @@ export class DisplayCalculatorComponent implements OnInit {
     else
       document.getElementById('header_id').classList.remove('active');
   } 
+  detectChangesForIncome(e){
+    this.income = e.value;
+  }
+
+  detectChangesForExpense(e){
+    this.expense = e.value;
+  }
 
 }
