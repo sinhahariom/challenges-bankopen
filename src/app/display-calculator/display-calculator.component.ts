@@ -14,6 +14,7 @@ export class DisplayCalculatorComponent implements OnInit {
     window.addEventListener('scroll',this.scroll,true);
   }
 
+  //added this for the Scroll Event and update the header class
   scroll(){
     let scrollPos = document.body.scrollTop;
     if(scrollPos>100)
@@ -21,10 +22,13 @@ export class DisplayCalculatorComponent implements OnInit {
     else
       document.getElementById('header_id').classList.remove('active');
   } 
+
+  //for slider event changes detection
   detectChangesForIncome(e){
     this.income = e.value;
   }
 
+  //for slider event changes detection
   detectChangesForExpense(e){
     this.expense = e.value;
   }
